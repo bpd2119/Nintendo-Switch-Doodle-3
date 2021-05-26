@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica", "Gills Sans", sans-serif;
+}
+
+#switch {
+  margin-top: 30px;
+  display: flex;
+  width: 900px;
+}
+#gameRadioPick {
+  margin-top: 10px;
+}
+#arrowKeys {
+  width: 100px;
+  margin-left: 20px;
+  transform: translate(0px, 50px);
+}
+#topButton {
+  transform: translate(15px, -1px);
+}
+#bottomButton {
+  transform: translate(15px, 1px);
+}
+#upArrow {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid lightgray;
+  margin-bottom: 4px;
+}
+#rightArrow {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid lightgray;
+  margin-left: 4px;
+}
+#leftArrow {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid lightgray;
+  margin-right: 4px;
+}
+#downArrow {
+  margin-top: 4px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid lightgray;
+}
+.arrowButton {
+  width: 25px;
+  height: 25px;
+  background-color: #333333;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.arrowButton:hover {
+  opacity: 1;
+}
+#latch {
+  width: 60px;
+  height: 40px;
+  position: relative;
+  bottom: 50px;
+  left: 400px;
+  background-color: black;
+  visibility: hidden;
+}
+
+#screen {
+  width: 500px;
+  height: 300px;
+  border: solid black 15px;
+}
+.powerOff {
+  background-color: #333333;
+  background-image: none;
+}
+.homeScreen {
+  visibility: hidden;
+}
+.onHome {
+  background-color: ghostwhite;
+  background-image: none;
+}
+.onHome > .homeScreen {
+  visibility: visible;
+}
+#powerButton {
+  border-radius: 50%;
+}
+
+.controller {
+  width: 100px;
+  height: 300px;
+}
+
+#leftCon {
+  background-color: rgb(10, 185, 230);
+  border-top-left-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+}
+
+#rightCon {
+  background-color: rgb(255, 60, 40);
+  border-top-right-radius: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+}
+
+#home {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transform: scale(0.5) translate(0px, 90px);
+  top: 100px;
+  left: 15px;
+  background-color: rgba(130, 130, 130, 0.8);
+}
+
+.joyStick {
+  width: 50px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 50%;
+  margin: 25%;
+}
+#rightJoy {
+  transform: translate(0px, 70px);
+}
+.userIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("https://assets.codepen.io/4984135/yoshiicon.jpg");
+  background-color: ghostwhite;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 92%;
+  transform: translate(10px, -20px);
+}
+
+.carousel {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(20px, 10px);
+}
+.carouselGame {
+  width: 100px;
+  height: 100px;
+  border: solid ghostwhite 4px;
+}
+.active {
+  outline: solid #00ffff 4px;
+}
+h3 {
+  font-family: "Helvetica", "Gills Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+h3 > span {
+  font-weight: 900;
+  color: #e60012;
+}
+
+#buttonPad {
+  width: 100px;
+  transform: translate(35px, 30px);
+}
+#buttonPad button {
+  width: 25px;
+  height: 25px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+#Y {
+  transform: translate(-20px, 0px);
+}
+#A {
+  transform: translate(-8px, 0px);
+}
+
+#profName {
+  font-size: 13px;
+  position: relative;
+  left: 50px;
+  color: #00bfff;
+  visibility: hidden;
+}

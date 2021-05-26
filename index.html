@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Doodle 3: Nintendo Switch</title>
+  </head>
+  <body>
+    <script src="script.js">
+
+    </script>
+    <button id="powerButton" onclick="pressPower()">
+      power
+    </button>
+    <h3>Current Play Mode: <span id="currentPlaymode">Handheld Mode</span></h3><button id="playMode" onclick="playMode()">
+      Switch Play Mode
+    </button>
+
+    <form id="gameRadioPick">
+      <fieldset>
+        <legend>Pick Your Game</legend>
+
+        <input type="radio" onclick="zeldaOn()" id="zelda" name="game">
+        <lable for="zelda">Zelda: Breath of the Wild</lable> <br>
+
+        <input type="radio" onclick="marioOdysseyOn()" id="marioOdyssey" name="game">
+        <lable for="marioOdyssey">Super Mario Odyssey</lable> <br>
+
+        <input type="radio" onclick="superSmashBrosOn()" id="superSmashBros" name="game">
+        <lable for="superSmashBros">Super Smash Bros. Ultimate</lable> <br>
+
+      </fieldset>
+    </form>
+
+    <div id="switch">
+
+      <!--Left Controller-->
+      <div class="controller" id="leftCon">
+        <div class="joyStick" id="leftJoy" onm></div>
+        <!--Arrow Keys-->
+        <div id=arrowKeys>
+          <button class="arrowButton" id=topButton>
+            <div id="upArrow"></div>
+          </button>
+          <br>
+          <button class="arrowButton">
+            <div id="leftArrow" onclick="leftArrow()"></div>
+          </button>
+          <button class="arrowButton" onclick="rightArrow()">
+            <div id="rightArrow"></div>
+          </button>
+          <br>
+          <button class="arrowButton" id=bottomButton>
+            <div id="downArrow"></div>
+          </button>
+        </div>
+      </div>
+
+      <div class="powerOff" id="screen">
+        <div id="latch"></div>
+        <div class="homeScreen">
+          <div class="userIcon onHome" onmouseover="userProfileTitle()">
+          </div>
+          <div class="onHome carousel">
+            <img src="https://yuzu-emu.org/images/game/boxart/the-legend-of-zelda-breath-of-the-wild.png" alt="breath of the wild" class="carouselGame active" id="bowBox">
+            <img src="https://cardiffstudentmedia.co.uk/quench/wp-content/uploads/sites/3/2017/02/SQ_NSwitch_SuperMarioOdyssey.jpg" alt="Super Mario Odyssey" class="carouselGame" id="oddBox">
+            <img src="https://img-eshop.cdn.nintendo.net/i/08af58551a19df2a73ccb36f720388434a1965776b34675c6f69af3f93280330.jpg" alt="" class="carouselGame" id="smashBox">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Controller-->
+      <div class="controller" id="rightCon">
+        <div id=buttonPad>
+          <button>X</button>
+          <br>
+          <button id="Y">Y</button>
+          <button id="A">A</button>
+          <br>
+          <button>B</button>
+        </div>
+        <div class="joyStick" id="rightJoy">
+        </div>
+        <div>
+          <button id="home" onClick="goHome()">
+            <i class="material-icons">home</i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <h2>Inspiration Image</h2>
+      <img src="https://cdn.pocket-lint.com/r/s/970x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0-jpg.webp?v1" alt="">
+    </div>
+  </body>
+</html>
